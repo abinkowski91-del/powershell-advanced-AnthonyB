@@ -1,5 +1,14 @@
-#code creates a variable "a" to hold the name of the resource group 
-#that will be created and then creates a new resource group with that name in the "centralus" location.
+<#
+.SYNOPSIS
+    Creates a resource group in Azure
+
+.DESCRIPTION
+    This script will create a resource group in Azure with the name specified by the user and in the location 'centralus'
+
+.PARAMETER a    
+    The name of the resource group to be created
+#>
+
 
 #create variable "a" to hold the name of the resource group that will be created
 
