@@ -58,3 +58,8 @@ Task 2 Step 8:
 
         Debug is way more in depth of what goes on behind the scenes as the script exectues.  Way more detail for someone trying to do advanced troubleshooting on a script
 
+Task 3 Step 12
+    Test name: create-resourcegroup.tests.ps1
+    expected result: Failed with errors
+    Actual result: tests Passed 1
+
