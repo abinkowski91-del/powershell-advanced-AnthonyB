@@ -133,3 +133,5 @@ Tags              :
                     Department   IT   
                     
 ResourceId        : /subscriptions/c590d1c0-2832-4a91-a127-fad428b7a9f3/resourceGroups/RandomGroup9
+
+    Added counters to track creation of resource groups and any errors/skips 

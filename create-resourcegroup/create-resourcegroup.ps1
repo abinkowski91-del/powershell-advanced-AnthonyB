@@ -5,7 +5,15 @@ function New-TestResourceGroup{
 Creates a resource group in Azure
 
 .DESCRIPTION
-This script will create a resource group in Azure with the name specified by the user and in the location 'centralus'
+This script will create a resource group in Azure with the name 
+specified by the user and in the location 'centralus'. 
+
+Script will also apply tags to the resource group with default values of
+Department=IT and Environment=Test.
+
+Script is now able to be used as a cmdlet with parameter sets and pipeline support.
+
+
 
 .PARAMETER ResourceGroupName
 The name of the resource group to be created
@@ -20,16 +28,18 @@ tags describes the tags to be applied to the resource group
     [CmdletBinding(SupportsShouldProcess=$true)]
 
     param(
+
+        #resourcegroupname variable with parameter set name of 'ResourceGroupName'
         [Parameter(Mandatory = $false,valuefrompipeline=$true, ParameterSetName = 'ResourceGroupName')]
         #validate that the resource group name is between 10 and 20 characters long and is mandatory
         [ValidateLength(10,20)]
         [string] $ResourceGroupName,
 
-        [Parameter(Mandatory=$false)]
         #add tags to the resource group with default values of Department=IT and Environment=Test
+        [Parameter(Mandatory=$false)]
         [hashtable]$tags = @{Department='IT'; Environment='Test' },
 
-        #give option to create a resource group with a name based on a project ID
+        #projectID variable
         [Parameter(Mandatory=$false, ParameterSetName = 'ProjectID')]
         [string] $projectId
 
@@ -87,7 +97,7 @@ tags describes the tags to be applied to the resource group
                     write-host "`n"
                     Write-Host "Creating resource group '$ResourceGroupName' in location 'centralus' with tags: $Tags"
                     write-host "`n"
-                    
+
                     New-AzResourceGroup `
                     -Name $ResourceGroupName `
                     -Location centralus `
@@ -129,7 +139,7 @@ tags describes the tags to be applied to the resource group
         #publish counter amounts to the console
         write-host "summary of resource group creation:"
         write-host "-----------------------------------"
-        write-host "Request Processed: $RequestProcessed"
+        write-host "Total Requests Processed: $RequestProcessed"
         write-host "Resource Created: $ResourceCreated"
         write-host "Resource Skipped: $ResourceSkipped"
         write-host "Error Count: $ErrorCount"

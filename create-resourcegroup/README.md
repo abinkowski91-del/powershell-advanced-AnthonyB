@@ -1,14 +1,11 @@
-Project Purpose:
-    to learn about proper scripting practices with powershell
-    to employ documentation and testing mimicking a real development environment
+    function is used to make a new resource group with default tags or any other tags passed into it via pipeline
 
-    to create a standalone function "create-testresourcegroup" for use in future scripts
-        function is used to make a new resource group with default tags or any other tags passed into it via pipeline
-        function also tests for group names that are too long or too short
+    function also tests for group names that are too long or too short
 
-Files included:
-    create-resourcegroup.ps1
-    create-resourcegroup.tests.ps1
-    
-Lessons learned:
-    ooh boy, pester sure is confusing to me. Kept getting errors and thankfully VS Code was able to help with some of them with its autocompletion thing.  also learned that i need to pace myself doing these labs and not wait until Sunday night to do them.
+    function now acts as a cmdlet with bindings and parameter sets
+
+    write verbose statements placed throughout function for more efficient debugging/troubleshooting
+
+    counters were added to count errors and successful/skipped resource group creation
+
+    function is now able to take input from a text file
