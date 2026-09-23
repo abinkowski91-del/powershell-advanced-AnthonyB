@@ -1,5 +1,13 @@
-$publicFunctions = Get-ChildItem -Path $PSScriptRoot\Public\*.ps1 | ForEach-Object {
-    $functionName = $_.FullName
-    $functionCode = Get-Content -Path $_.FullName -Raw
-    $functionCode
+$publicFunctions = Get-ChildItem -Path $PSScriptRoot\NWTC.ResourceGroups\Public\*.ps1 -erroraction SilentlyContinue
+
+foreach ($function in $publicFunctions) {
+    . $function.FullName
+}
+
+export-ModuleMember -Function $publicFunctions.BaseName
+
+$privateFunctions = Get-ChildItem -Path $PSScriptRoot\Private\*.ps1 -erroraction SilentlyContinue
+
+foreach ($function in $privateFunctions) {
+    . $function.FullName
 }
