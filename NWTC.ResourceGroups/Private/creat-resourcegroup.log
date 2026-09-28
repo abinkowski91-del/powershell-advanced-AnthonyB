@@ -1,0 +1,249 @@
+**********************
+PowerShell transcript start
+Start time: 20260928010922
+Username: PA-Anthonyb\student
+RunAs User: PA-Anthonyb\student
+Configuration Name: 
+Machine: PA-Anthonyb (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.dll -noexit -command try { . "c:\Program Files\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 2740
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is ./creat-resourcegroup.log
+
+Creating resource group 'oaiejfoijoaeij' in location 'centralus' with tags: System.Collections.Hashtable
+
+
+ResourceGroupName : oaiejfoijoaeij
+Location          : centralus
+ProvisioningState : Succeeded
+Tags              : 
+                    Name         Value
+                    ===========  =====
+                    Department   IT
+                    Environment  Test
+
+ResourceId        : /subscriptions/c590d1c0-2832-4a91-a127-fad428b7a9f3/resourceGroups/oaiejfoijoaeij
+
+@{ResourcegroupName=oaiejfoijoaeij; Location=centralus; Status=Created; Tags=System.Collections.Hashtable; Timestamp=9/28/2026 1:09:22 AM}
+summary of resource group creation:
+-----------------------------------
+Total Requests Processed: 1
+Resource Created: 1
+Resource Skipped: 0
+Error Count: 0
+**********************
+PowerShell transcript end
+End time: 20260928010932
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260928011711
+Username: PA-Anthonyb\student
+RunAs User: PA-Anthonyb\student
+Configuration Name: 
+Machine: PA-Anthonyb (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.dll -noexit -command try { . "c:\Program Files\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 2740
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is ./creat-resourcegroup.log
+
+ResourceGroupName : RG-48468
+Location          : centralus
+ProvisioningState : Succeeded
+Tags              : 
+                    Name         Value
+                    ===========  =====
+                    Department   IT
+                    Environment  Test
+
+ResourceId        : /subscriptions/c590d1c0-2832-4a91-a127-fad428b7a9f3/resourceGroups/RG-48468
+
+@{ResourcegroupName=; Location=centralus; Status=Created; Tags=System.Collections.Hashtable; Timestamp=9/28/2026 1:17:11 AM}
+summary of resource group creation:
+-----------------------------------
+Total Requests Processed: 1
+Resource Created: 1
+Resource Skipped: 0
+Error Count: 0
+**********************
+PowerShell transcript end
+End time: 20260928011712
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260928011818
+Username: PA-Anthonyb\student
+RunAs User: PA-Anthonyb\student
+Configuration Name: 
+Machine: PA-Anthonyb (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.dll -noexit -command try { . "c:\Program Files\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 2740
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is ./creat-resourcegroup.log
+Confirm
+Provided resource group already exists. Are you sure you want to update it?
+&Yes  &No  &Suspend
+Y
+
+ResourceGroupName : RG-48468
+Location          : centralus
+ProvisioningState : Succeeded
+Tags              : 
+                    Name         Value
+                    ===========  =====
+                    Department   IT
+                    Environment  Test
+
+ResourceId        : /subscriptions/c590d1c0-2832-4a91-a127-fad428b7a9f3/resourceGroups/RG-48468
+
+@{ResourcegroupName=; Location=centralus; Status=Created; Tags=System.Collections.Hashtable; Timestamp=9/28/2026 1:18:18 AM}
+summary of resource group creation:
+-----------------------------------
+Total Requests Processed: 1
+Resource Created: 1
+Resource Skipped: 0
+Error Count: 0
+**********************
+PowerShell transcript end
+End time: 20260928011822
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260928012606
+Username: PA-Anthonyb\student
+RunAs User: PA-Anthonyb\student
+Configuration Name: 
+Machine: PA-Anthonyb (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.dll -noexit -command try { . "c:\Program Files\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 2740
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is ./creat-resourcegroup.log
+
+Creating resource group 'resourcegroups.txt' in location 'centralus' with tags: System.Collections.Hashtable
+
+
+ResourceGroupName : resourcegroups.txt
+Location          : centralus
+ProvisioningState : Succeeded
+Tags              : 
+                    Name         Value
+                    ===========  =====
+                    Department   IT
+                    Environment  Test
+
+ResourceId        : /subscriptions/c590d1c0-2832-4a91-a127-fad428b7a9f3/resourceGroups/resourcegroups.txt
+
+@{ResourcegroupName=; Location=centralus; Status=Created; Tags=System.Collections.Hashtable; Timestamp=9/28/2026 1:26:06 AM}
+summary of resource group creation:
+-----------------------------------
+Total Requests Processed: 1
+Resource Created: 1
+Resource Skipped: 0
+Error Count: 0
+**********************
+PowerShell transcript end
+End time: 20260928012607
+**********************
+**********************
+PowerShell transcript start
+Start time: 20260928013713
+Username: PA-Anthonyb\student
+RunAs User: PA-Anthonyb\student
+Configuration Name: 
+Machine: PA-Anthonyb (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.dll -noexit -command try { . "c:\Program Files\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 2740
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup1' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup2' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup3' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup4' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup5' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup6' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup7' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup8' already exists. Skipping creation.
+
+Transcript started, output file is ./creat-resourcegroup.log
+
+Resource group 'RandomGroup9' already exists. Skipping creation.
+
+@{ResourcegroupName=; Location=centralus; Status=Created; Tags=System.Collections.Hashtable; Timestamp=9/28/2026 1:37:13 AM}
+summary of resource group creation:
+-----------------------------------
+Total Requests Processed: 9
+Resource Created: 0
+Resource Skipped: 9
+Error Count: 0
+Transcript stopped, output file is C:\powershell-advanced-AnthonyB\NWTC.ResourceGroups\Private\creat-resourcegroup.log
+]633;D;0]633;A]633;P;Cwd=C:\x5cpowershell-advanced-AnthonyB\x5cNWTC.ResourceGroups\x5cPrivatePS C:\powershell-advanced-AnthonyB\NWTC.ResourceGroups\Private> ]633;B
+PS>cd ..\
+]633;D;0]633;A]633;P;Cwd=C:\x5cpowershell-advanced-AnthonyB\x5cNWTC.ResourceGroupsPS C:\powershell-advanced-AnthonyB\NWTC.ResourceGroups> ]633;B
+PS>cd ..

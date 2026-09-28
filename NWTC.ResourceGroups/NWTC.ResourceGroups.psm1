@@ -1,4 +1,6 @@
-$publicFunctions = Get-ChildItem -Path $PSScriptRoot\NWTC.ResourceGroups\Public\*.ps1 -erroraction SilentlyContinue
+$publicFunctions = Get-ChildItem -Path $psscriptroot\Public\*.ps1 -erroraction SilentlyContinue
+
+write-host "Loading public functions from $($publicFunctions.Count) files in the Public folder..."
 
 foreach ($function in $publicFunctions) {
     . $function.FullName

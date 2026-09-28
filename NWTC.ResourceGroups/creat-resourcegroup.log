@@ -1,0 +1,46 @@
+**********************
+PowerShell transcript start
+Start time: 20260925142353
+Username: PA-Anthonyb\student
+RunAs User: PA-Anthonyb\student
+Configuration Name: 
+Machine: PA-Anthonyb (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.dll -noexit -command try { . "c:\Program Files\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 8148
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is ./creat-resourcegroup.log
+
+Creating resource group 'testgroupname3' in location 'centralus' with tags: System.Collections.Hashtable
+
+
+ResourceGroupName : testgroupname3
+Location          : centralus
+ProvisioningState : Succeeded
+Tags              : 
+                    Name         Value
+                    ===========  =====
+                    Department   IT
+                    Environment  Test
+
+ResourceId        : /subscriptions/c590d1c0-2832-4a91-a127-fad428b7a9f3/resourceGroups/testgroupname3
+
+@{ResourcegroupName=testgroupname3; Location=centralus; Status=Created; Tags=System.Collections.Hashtable; Timestamp=9/25/2026 2:23:53 PM}
+summary of resource group creation:
+-----------------------------------
+Total Requests Processed: 1
+Resource Created: 1
+Resource Skipped: 0
+Error Count: 0
+**********************
+PowerShell transcript end
+End time: 20260925142402
+**********************

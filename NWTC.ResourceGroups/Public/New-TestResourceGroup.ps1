@@ -72,8 +72,9 @@ tags describes the tags to be applied to the resource group
 
     Process{
 
-       
-        Start-Transcript -path ./creat-resourcegroup.log -Append
+        #call write-modulelog to create a log file and append a message to it with the resource group name and tags
+        $moduleLogPath = "c:\powershell-advanced-anthonyb\NWTC.ResourceGroups\Logs\NWTC.ResourceGroups.log"
+        
         
         #try catch block to handle any errors that may occur during the 
         #creation of the resource group
@@ -81,27 +82,36 @@ tags describes the tags to be applied to the resource group
             if ($PScmdlet.ShouldProcess("Resource Group '$RecourceGroupName'", "Create")){
 
                 
-            #if resourcegroup name is not null, create anew resource group with name stored 
+            #if resourcegroup name is not null, create a new resource group with name stored 
             #in variable "$ResourceGroupName" 
             #and specify the location as "centralus"
                 if ($resourcegroupname)     {
                     
+                    #test if the resource group already exists
                     if (get-azresourcegroup -name $ResourceGroupName -ErrorAction SilentlyContinue) {
                         write-host "`n"
                         Write-Host "Resource group '$ResourceGroupName' already exists. Skipping creation."
                         write-host "`n"
+
+                        #write to the module log that the resource group already exists and was skipped
+                        write-modulelog -Message "could not create resource group '$ResourceGroupName' because it already exists. Skipping creation." `
+                            -moduleLogPath $moduleLogPath
+
                         $ResourceSkipped++
                     }
                     else {
-
-                    write-host "`n"
-                    Write-Host "Creating resource group '$ResourceGroupName' in location 'centralus' with tags: $Tags"
-                    write-host "`n"
+                    #create the resource group
+                    write-modulelog -Message "Starting the creation of the resource group '$ProjectID' in location 'centralus' with tags: $Tags" `
+                        -moduleLogPath $moduleLogPath
 
                     New-AzResourceGroup `
                     -Name $ResourceGroupName `
                     -Location centralus `
                     -tag $Tags
+
+                    #write to the module log that the resource group was created
+                    write-moduelog -Message "created resource group '$ResourceGroupName' in location 'centralus' with tags: $Tags" `
+                        -moduleLogPath $moduleLogPath
 
                     $ResourceCreated++
                     }
@@ -109,14 +119,24 @@ tags describes the tags to be applied to the resource group
                 #otherwise, create a resource group with a name based on the project ID variable if 
                 #project ID parameter is specified
                 elseif ($projectID)   {
-                    
+
+                    #call write-modulelog to create a log file and append a message to it with the project ID and tags
+                    write-modulelog -Message "Starting the creation of the resource group '$ProjectID' in location 'centralus' with tags: $Tags" `
+                        -moduleLogPath $moduleLogPath
+
                     #add a prefix to the projectID variable so it can be used as a resource group name
                     $prefix = "RG-"
                     $projectID = $prefix + $projectID
+                    
+                    #create the resource group
                     New-AzResourceGroup `
                     -Name $ProjectID `
                     -Location centralus `
                     -tag $Tags
+                    
+                    #write to the module log that the resource group was created
+                    write-modulelog -Message "created resource group '$ProjectID' in location 'centralus' with tags: $Tags" `
+                        -moduleLogPath $moduleLogPath
 
                     $ResourceCreated++
                 }
@@ -144,7 +164,7 @@ tags describes the tags to be applied to the resource group
         write-host "Resource Skipped: $ResourceSkipped"
         write-host "Error Count: $ErrorCount"
 
-        Stop-Transcript
+        
     }
     
 }
