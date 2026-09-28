@@ -14,6 +14,11 @@ Files included:
     Lab3-lab.md
     Lab4-lab.md
 
+    nwtc.resourgroups.psd1
+    nwtc.resourgroups.psm1
+    
+    write-modulelog.ps1
+
     
 Lessons learned:
     ooh boy, pester sure is confusing to me. Kept getting errors and thankfully VS Code was able to help with some of them with its autocompletion thing.  also learned that i need to pace myself doing these labs and not wait until Sunday night to do them.

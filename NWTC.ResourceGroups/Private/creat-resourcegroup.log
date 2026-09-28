@@ -247,3 +247,13 @@ Transcript stopped, output file is C:\powershell-advanced-AnthonyB\NWTC.Resource
 PS>cd ..\
 ]633;D;0]633;A]633;P;Cwd=C:\x5cpowershell-advanced-AnthonyB\x5cNWTC.ResourceGroupsPS C:\powershell-advanced-AnthonyB\NWTC.ResourceGroups> ]633;B
 PS>cd ..
+]633;D;0]633;A]633;P;Cwd=C:\x5cpowershell-advanced-AnthonyBPS C:\powershell-advanced-AnthonyB> ]633;B
+PS>git add .
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cpowershell-advanced-AnthonyBPS C:\powershell-advanced-AnthonyB> ]633;B
+PS>git commit
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cpowershell-advanced-AnthonyBPS C:\powershell-advanced-AnthonyB> ]633;B
+PS>git push
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cpowershell-advanced-AnthonyBPS C:\powershell-advanced-AnthonyB> ]633;B

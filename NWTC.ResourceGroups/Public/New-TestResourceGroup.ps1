@@ -5,13 +5,16 @@ function New-TestResourceGroup{
 Creates a resource group in Azure
 
 .DESCRIPTION
-This script will create a resource group in Azure with the name 
+This function will create a resource group in Azure with the name 
 specified by the user and in the location 'centralus'. 
 
-Script will also apply tags to the resource group with default values of
+function also apply tags to the resource group with default values of
 Department=IT and Environment=Test.
 
-Script is now able to be used as a cmdlet with parameter sets and pipeline support.
+function able to be used as a cmdlet with parameter sets and pipeline support.
+
+function will also use the write-modulelog function to write messages to a module log 
+file with the resource group name and tags applied.
 
 
 
