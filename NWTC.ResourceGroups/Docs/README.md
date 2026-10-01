@@ -21,3 +21,6 @@ Usage Examples
 
 version info
     1.1.0 - added the new feature of using Write-Modulelog to create logs as New-TestResourceGroup executes
+            added new feature of displaying a summary of all resource groups with Get-ResourceGroupSummary function
+            not a major update since overall functionality of the module hasn't changed
+            not a patch since new features were added and we are not fixing any bugs with this release

@@ -20,11 +20,11 @@ The path to the module log file.
     )
       $directory = Split-Path -Path $moduleLogPath -Parent
 
-    <#
+
     if (-not [string]::IsNullOrEmpty($directory) -and -not (Test-Path -Path $directory)) {
         New-Item -Path $directory -ItemType Directory -Force | Out-Null
     }
-        #>
+        
 
     $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
     Add-Content -Path $moduleLogPath -Value "[$timestamp] $Message"
