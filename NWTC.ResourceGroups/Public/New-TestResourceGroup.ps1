@@ -76,7 +76,7 @@ tags describes the tags to be applied to the resource group
     Process{
 
         #call write-modulelog to create a log file and append a message to it with the resource group name and tags
-        $moduleLogPath = "c:\powershell-advanced-anthonyb\NWTC.ResourceGroups\Logs\NWTC.ResourceGroups.log"
+        $moduleLogPath = "c:\powershell-advanced-anthonyb\NWTC.ResourceGroups\Logs\"
         
         
         #try catch block to handle any errors that may occur during the 
@@ -113,7 +113,7 @@ tags describes the tags to be applied to the resource group
                     -tag $Tags
 
                     #write to the module log that the resource group was created
-                    write-moduelog -Message "created resource group '$ResourceGroupName' in location 'centralus' with tags: $Tags" `
+                    write-modulelog -Message "created resource group '$ResourceGroupName' in location 'centralus' with tags: $Tags" `
                         -moduleLogPath $moduleLogPath
 
                     $ResourceCreated++

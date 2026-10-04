@@ -12,3 +12,5 @@
 
     function now calls "write-modulelog" function to create and maintain a running log as new-testresourcegroup executes
     old transcript method is removed
+
+    function Get-ResourceGroupSummary was created to display a summary of all resource groups in the connected Azure account
