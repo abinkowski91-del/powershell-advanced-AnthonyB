@@ -1,4 +1,4 @@
-Current Version 1.0.0
+Current Version 1.1.0
 Author: moi (anthony binkowski)
 Description: module currently has 3 functions.  
     New-TestResourceGroup creates a new resource group in Azure with default tags in the CentralUS location
@@ -10,3 +10,7 @@ Description: module currently has 3 functions.
 Exported Commands:
     New-TestResourceGroup
     Get-ResourceGroupSummary
+
+    added CHANGELOG.md
+    
+    added RELEASENOTES.md
