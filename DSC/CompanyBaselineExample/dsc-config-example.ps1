@@ -1,6 +1,6 @@
 Configuration CompanyBaseline 
 { 
-  Node localhost 
+  Node localhost
   { 
     File AutomationFolder 
     { 

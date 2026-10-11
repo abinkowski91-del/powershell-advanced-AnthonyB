@@ -1,20 +1,20 @@
-Configuration CompanyBaseline 
-{ 
-  Node localhost 
+Configuration AnthonyBaseline 
+{
+  import-dscresource -name service, log
+  
+  Node localhost
   { 
-    File AutomationFolder 
+    Service W32Time 
     { 
-      DestinationPath = "C:\Automation" 
-      Type = "Directory" 
-      Ensure = "Present" 
-    } 
-    File ConfigFile 
+      Name = "W32Time" 
+      State = "Running" 
+      StartupType = "Automatic" 
+    }
+
+    log ModuleLog 
     { 
-      DestinationPath = "C:\Automation\Config.txt" 
-      Contents = "NWTC Standard Configuration" 
-      Type = "File" 
-      Ensure = "Present" 
-      DependsOn = "[File]AutomationFolder" 
-    } 
+      Message = "This is a log entry for the module log."
+      
+    }
   } 
 }
